@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumpleaños Mi Princesita ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#ffd6e8,#ffe9f5,#fff2fa);
+overflow-x:hidden;
+color:#444;
+}
+
+header{
+
+padding:50px 20px;
+text-align:center;
+
+}
+
+header h1{
+
+font-family:'Dancing Script',cursive;
+font-size:65px;
+color:#ff4d88;
+
+animation:latido 1.5s infinite;
+
+}
+
+header p{
+
+font-size:22px;
+margin-top:10px;
+
+}
+
+@keyframes latido{
+
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+
+}
+
+section{
+
+width:90%;
+max-width:900px;
+margin:auto;
+margin-bottom:40px;
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+h2{
+
+color:#ff4d88;
+margin-bottom:20px;
+
+}
+
+textarea{
+
+width:100%;
+height:220px;
+border:none;
+outline:none;
+resize:none;
+font-size:18px;
+padding:20px;
+border-radius:15px;
+background:#fff5fb;
+
+}
+
+video{
+
+width:100%;
+border-radius:20px;
+
+}
+
+iframe{
+
+width:100%;
+height:500px;
+border:none;
+border-radius:20px;
+
+}
+
+footer{
+
+padding:30px;
+text-align:center;
+font-size:18px;
+color:#ff4d88;
+
+}
+
+/* corazones */
+
+.corazon{
+
+position:fixed;
+bottom:-30px;
+font-size:25px;
+animation:subir 8s linear infinite;
+opacity:.7;
+
+}
+
+@keyframes subir{
+
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎂 Feliz Cumpleaños Mi Atardecer Hermoso ❤️</h1>
+
+<p>Hoy celebramos el día más bonito, porque nació la persona que ilumina mi vida, la persona que le dio un giro a mi vida, la persona que me hace querer despertar
+    y ser mejor persona, hombre y novio. 🌸</p>
+
+</header>
+
+<section>
+
+<h2>💌 Una carta para ti</h2>
+
+<textarea>
+
+Mi muñequita, las palabras no son lo suficiente para decirte lo muy feliz que me haces, estar en tu vida es un regalo que se me otorgo y que no quiero que termine,
+el amor que siento por ti es tan lindo y sincero como la primer carta que te hice, fue justamente como ahora, a travez de una pantalla pero con mi corazon en la mano
+a punto de dartelo porque chi cuando te escribi esa carta yoo ya sabia que te queria en mi vida y hoy se que te quiero por toda la eternidad, quiero que seas mi mujer por
+toda la eternidad, te quiero con locura, eres el amor de mi vida y cada detalle es una forma de decirte que te quiero, pero como dijo Mario Benedetti :"Si hago cosas por ti, no es para que me quieras.
+ Es para que sepas que te quiero." y te voy a demostrar lo mucho que te quiero y te querre por toda la eternidad, escribiendo esto estoy llorando, si se descompone el teclado
+ te lo voy a coobrar a besos amor, en fin que sea el primer cumpleaños de infinitos a tu lado
+Con amor:
+(Tu Joelito)
+
+</textarea>
+
+</section>
+
+<section>
+
+<h2>
+    Un pequeño video para ti
+</h2>
+
+<!-- Cambia "video.mp4" por el nombre de tu video -->
+
+<video controls>
+
+<source src="video.mp4" type="video/mp4">
+
+
+</video>
+
+</section>
+
+<section>
+
+<h2>Esta cancion es algo que recuerdo con mucha alegria, porque la pusiste en tus notas cuando nos estabamos conociendo y justamente asi me siento a tu lado, asi 
+    siento al estar enamorado de ti Gabbicita</h2>
+
+<!-- Cambia el ID del video -->
+
+<iframe
+    width="100%"
+    height="500"
+    src="https://www.youtube.com/embed/aAZb5Y1EkoQ"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
+
+</section>
+
+<footer>
+
+Hecho con muchísimo ❤️ para la persona más especial del mundo.
+
+</footer>
+
+<script>
+
+function crearCorazon(){
+
+const corazon=document.createElement("div");
+
+corazon.classList.add("corazon");
+
+corazon.innerHTML="💖";
+
+corazon.style.left=Math.random()*100+"vw";
+
+corazon.style.fontSize=(20+Math.random()*30)+"px";
+
+corazon.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.body.appendChild(corazon);
+
+setTimeout(()=>{
+corazon.remove();
+},10000);
+
+}
+
+setInterval(crearCorazon,400);
+
+</script>
+
+</body>
+</html>
